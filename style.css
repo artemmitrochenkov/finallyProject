@@ -1,0 +1,43 @@
+@font-face {
+    font-family: hopo;
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: gopo;
+    src: url(Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+}
+section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+#main{
+    background-image: url(img/bgMAIN.png);
+}
+
+    #about{
+    background-image: url(img/bgABOUT.png);
+    }
+
+    #skills{
+    background-image: url(img/bgSKILLS.png);
+    }
+
+    #works{
+    background-image: url(img/bgWORKS.png);
+    }
+    
+    #comments{
+    background-image: url(img/bgCOMMENTS.png);
+    }
+    main-block, .about-block, .skills-block, .works-block, .comments-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+    }
