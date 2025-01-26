@@ -2,13 +2,16 @@
     font-family: hopo;
     src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: gopo;
     src: url(Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
 }
+
 * {
     margin: 0;
 }
+
 section {
     background-position: center;
     background-repeat: no-repeat;
@@ -16,6 +19,7 @@ section {
     min-height: 100vh;
     position: relative;
 }
+
 #main {
     background-image: url(img/bgMAIN.png);
 }
@@ -23,16 +27,20 @@ section {
 #about {
     background-image: url(img/bgABOUT.png);
 }
+
 #skills {
     background-image: url(img/bgSKILLS.png);
 }
+
 #works {
     background-image: url(img/bgWORKS.png);
 }
+
 #comments {
     background-image: url(img/bgCOMMENTS.png);
 }
-main-block,
+
+.main-block,
 .about-block,
 .skills-block,
 .works-block,
@@ -42,10 +50,12 @@ main-block,
     align-items: center;
     min-height: 70vh;
 }
+
 .main-block {
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
 }
+
 .main-content {
     background-image:
         url(img/form1.png);
@@ -55,16 +65,19 @@ main-block,
     height: 223px;
     padding-left: 30px;
 }
+
 .main-title {
-    padding-top: 67px;
+    padding-top: 60px;
     color: #2B2D35;
     font-size: 80px;
 }
+
 .main-subtitle {
     color: #2B2D35;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'hopo';
 }
+
 .button {
     width: 200px;
     height: 60px;
@@ -77,13 +90,210 @@ main-block,
     box-shadow: 5px 5px 0 #000000;
     margin-top: 20px;
 }
+
 .button a {
     font-size: 20px;
     text-decoration: none;
 }
+
 .button {
     transition-duration: 0.3s;
 }
+
 .button:hover {
     background: #a0d826;
+}
+
+.moving-planet {
+    background:
+        url(img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+@keyframes planet-move {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(42px);
+    }
+}
+
+.moving-planet {
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    text-shadow:
+        5px 5px 0 #000000;
+}
+
+.about-content {
+    width: 35%;
+    height: 270px;
+    background: #792AFF;
+    padding-left: 40px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+}
+
+.about-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 463px;
+    margin-bottom: 20px;
+    font-family: 'hopo';
+}
+
+.about-card {
+    background-image:
+        url(img/form2.png);
+    background-repeat:
+        no-repeat;
+    width: 376px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.about-card p {
+    color: #000;
+    font-size: 17px;
+    align-self: start;
+    padding-left: 20px;
+    line-height: 25px;
+    font-family: 'hopo';
+}
+
+.about-card img {
+    padding-bottom: 20px;
+}
+
+.about-text {
+    background-color: #792AFF;
+}
+
+.skills-card {
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p {
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+.moving-planet2 {
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.moving-planet2 {
+    animation-name: planet_move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.works-block img {
+    margin: 0 20px;
+    width: 27%;
+    box-shadow:
+        7px 7px 0 #000000;
+}
+
+.comments-block {
+    justify-content: space-evenly;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.comments-card {
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.comments-card h3 {
+    font-size: 18px;
+    font-family: 'hopo';
+    padding: 10px;
+}
+
+.comments-card p {
+    font-size: 14px;
+    font-family: 'hopo';
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-info p {
+    font-family: 'Comfortaa';
+    padding-bottom: 10px;
+}
+
+.footer-year p {
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a {
+    margin-right: 15px;
+}
+.comment{
+font-family: 'gopo';
 }
