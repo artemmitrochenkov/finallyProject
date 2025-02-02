@@ -246,7 +246,7 @@ section {
     margin: auto;
 }
 
-.comments-card {
+.comment-card {
     background-image: url(img/card.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -259,13 +259,13 @@ section {
     max-width: 200px;
 }
 
-.comments-card h3 {
+.comment-card h3 {
     font-size: 18px;
     font-family: 'hopo';
     padding: 10px;
 }
 
-.comments-card p {
+.comment-card p {
     font-size: 14px;
     font-family: 'hopo';
     padding: 10px 20px;
@@ -282,12 +282,12 @@ footer {
 }
 
 .footer-info p {
-    font-family: 'Comfortaa';
+    font-family: 'hopo';
     padding-bottom: 10px;
 }
 
 .footer-year p {
-    font-family: 'Comfortaa';
+    font-family: 'hopo';
     letter-spacing: 1.5px;
 }
 
@@ -295,5 +295,51 @@ footer {
     margin-right: 15px;
 }
 .comment{
-font-family: 'gopo';
+    background-image: url(img/comment-mobile.png);
+    height: 70px;
+    width: 350px;
+    padding: 10px;
+    font-family: 'gopo';
 }
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+ }
+ .fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+ }
+ .nav-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-right: 150px;
+ }
+ .nav-link{
+    width: 112px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background-color: #FFF;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+ }
+ 
+ .logo{
+    color: #BBFF2C;
+    font-size: 80px;
+    padding-left: 50px;
+ }
+ .active{
+    background-color: #BBFF2C;
+ }
