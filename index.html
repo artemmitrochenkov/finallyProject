@@ -9,7 +9,27 @@
 </head>
 
 <body>
-    <section id="main">
+    <nav>
+        <div class="fixed-menu">
+            <h1 class="logo">DK</h1>
+            <div class="nav-links">
+                <div class="mobile-button">
+                    <img src="img/mobile_menu.png" width="40">
+                </div>
+                <div class="mobile_menu hide">
+                    <div class="modile-nav">
+                    <div class="mobile-nav-links">
+                <a class="nav-link active" href="#main">Главная</a>
+                <a class="nav-link" href="#about">Обо мне</a>
+                <a class="nav-link" href="#skills">Навыки</a>
+                <a class="nav-link" href="#works">Работы</a>
+                <a class="nav-link" href="#comments">Отзыв</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <section id="main" class="main-link">
         <div class="main-block">
             <img src="img/maskot.png" width="145">
             <div class="main-content">
@@ -28,7 +48,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about-link">
         <h1 class="title">ОБО МНЕ</h1>
         <div class="about-block">
             <div class="about-text">
@@ -40,7 +60,7 @@
                     <a href="#">Мои навыки</a>
                 </div>
             </div>
-            <div class="about-card">
+            <div class="about-card" class="about-card-link">
                 <img src="img/">
                 <p>Где живу: Москва</p>
                 <p>Возраст: 13</p>
@@ -50,7 +70,7 @@
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="skills-link">
         <h1 class="title">НАВЫКИ</h1>
         <div class="skills-block">
             <div class="skills-card">
@@ -70,7 +90,7 @@
         </div>
     </section>
 
-    <section id="works">
+    <section id="works" class="works-link">
         <h1 class="title">РАБОТЫ</h1>
         <div class="works-block">
             <img src="img/work1.png">
@@ -79,7 +99,7 @@
         </div>
     </section>
 
-    <section id="comments">
+    <section id="comments" class="comment-link">
         <h1 class="title">
             ОТЗЫВЫ
         </h1>
@@ -124,18 +144,6 @@
             <a href="#"> <img src="img/discord.svg"> </a>
         </div>
     </footer>
-    <nav>
-        <div class="fixed-menu">
-            <h1 class="logo">DK</h1>
-            <div class="nav-links">
-                <a class="nav-link" href="#main">Главная</a>
-                <a class="nav-link" href="#about">Обо мне</a>
-                <a class="nav-link" href="#skills">Навыки</a>
-                <a class="nav-link" href="#works">Работы</a>
-                <a class="nav-link" href="#comments">Отзывы</a>
-            </div>
-        </div>
-    </nav>
 </body>
 <script src="main.js"></script>
 
